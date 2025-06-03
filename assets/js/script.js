@@ -104,7 +104,7 @@ const propiedadesAlquiler = [
   },
 ];
 
-/*=====> VARIABLES*/
+/*=====> VARIABLES DIV HOME*/
 
 let todasLasVentas = document.getElementById("todasLasVentas");
 let homeventa = document.getElementById("divhomeventa");
@@ -207,7 +207,7 @@ let paginaAlquiler = document.getElementById("paginaAlquiler");
 
 //Condicion para validar id
 
-if (homeventa && homealquiler) {
+/* if (homeventa && homealquiler) {
   mostrarPropVenta(propiedadesVentas, homeventa, 3),
     mostrarPropAlquiler(propiedadesAlquiler, homealquiler, 3);
 } else {
@@ -221,4 +221,20 @@ if (paginaVentas) {
 if (paginaAlquiler) {
   mostrarPropAlquiler(propiedadesAlquiler, paginaAlquiler);
 } else {
-}
+} */
+
+//ESCRITO EN OPERADOR TERNARIO
+
+homeventa && homealquiler
+  ? (mostrarPropVenta(propiedadesVentas, homeventa, 3),
+     mostrarPropAlquiler(propiedadesAlquiler, homealquiler, 3))
+  : null;
+
+paginaVentas
+  ? mostrarPropVenta(propiedadesVentas, paginaVentas)
+  : null;
+
+paginaAlquiler
+  ? mostrarPropAlquiler(propiedadesAlquiler, paginaAlquiler)
+  : null;
+
