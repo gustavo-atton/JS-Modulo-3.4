@@ -15,7 +15,7 @@ const propiedadesVentas = [
   },
   {
     nombre: "Casa En Plaza Don Bosco, Concepción",
-    src: "./assets/img/05.jpg",
+    src: "./assets/img/06.jpg",
     descripcion:
       "Preciosa casa esquina, ubicada en sector Plaza Don Bosco en Concepción en dos pisos.",
     ubicacion: "Barrio Oriente, Concepcion, Chile",
